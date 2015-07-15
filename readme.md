@@ -115,6 +115,7 @@ val houses: Neighborhood = shuffle(1 to 10).toList
 
 def maxLoot(houses: Neighborhood): Int = {
   houses
+    .subsets
     .filter(noAdjacentHouses)
     .map(totalLoot)
     .max
