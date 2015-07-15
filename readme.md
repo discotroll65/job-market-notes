@@ -1,6 +1,6 @@
 ## Misc Job Market Notes
 
-Busy week for me. I can probably come by a/A again next Mon or Tues to to talk shop again if it'll be helpful. 
+Busy week for me. I can probably come by a/A again next Mon or Tuesto to talk shop again if it'll be helpful. 
 
 ## General advice: 
 
