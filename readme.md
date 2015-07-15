@@ -101,7 +101,7 @@ def maxLoot(houses)
   subsets(houses)
     .filter { |neighborhood| no_adjacent_houses?(neighborhood) }
     .map { |neighborhood| total_loot(neighborhood) }
-    .sum
+    .max
 end
 ```
 Implementations aren't there, but that's the structure of the problem.
@@ -117,7 +117,7 @@ def maxLoot(houses: Neighborhood): Int = {
   houses
     .filter(noAdjacentHouses)
     .map(totalLoot)
-    .sum
+    .max
 }
 
 // with some type signatures of TBD methods:
