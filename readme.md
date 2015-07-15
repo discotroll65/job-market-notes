@@ -127,3 +127,9 @@ def noAdjacentHouses(houses: Neighborhood): Boolean = {...}
 def totalLoot(houses: Neighborhood): Int = {...}
 ```
 Types are the best.
+
+So for both scala and ruby versions, runtimes are approx O(2^n) (most costly operation is generating all subsets) <sup>[1](#myfootnote1)</sup>
+
+Through the magic of dynamic programming, we can get this down to O(n). More to come on this.
+
+<a name="myfootnote1">1</a>: The more accurate bound is O(n * (2 ^ n)): we generate 2 ^ n subsets, then traverse that collection 3 times.
