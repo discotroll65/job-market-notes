@@ -1,10 +1,10 @@
-## Misc Job Market Notes
+### Misc Job Market Notes
 
 These are pretty rough. I'll continue to update this. Probably going to split this up into separate more focused parts.
 
 Busy week for me. I can probably come by a/A again next Mon or Tues to to talk shop again if it'll be helpful.
 
-## General advice:
+### General advice:
 
 + Focus on either front-end or back-end, not both. Take a few weeks (depending on how much time you are able go without a job), and go hard at the field that you're targeting first. If things don't go well, you can always switch focus. Why don't go full-stack?
 
@@ -21,9 +21,9 @@ Busy week for me. I can probably come by a/A again next Mon or Tues to to talk s
 + If you are considering both front-end and back-end, go for back-end first. Should you later decide to switch focus to front-end, the skills you've practiced for back-end will still be helpful in front-end interviews. Front-end skills are much less applicable in back-end interviews.
 
 Most importantly:
-#### Don't feel pressured to accept the offers you get from the mediocre companies you interview at initially. The better people at a/A have placed really well. If you have enough enough money to finance a longer job-search, you'll be able to hold out for a very strong starting position.
+## Don't feel pressured to accept the offers you get from the mediocre companies you interview at initially. The better people at a/A have placed really well. If you have enough enough money to finance a longer job-search, you'll be able to hold out for a very strong starting position.
 
-## Front-end advice
+### Front-end advice
 Front-end interviews are much more structured and have a much tighter connection with your actual on the job responsibilities. At your new company, you are going to be trying to make polished user-interfaces, probably using some single-page app javascript MVC framework. If you have a portfolio of polished web apps, this is an accurate costly signal of your ability to do the same when on the job.
 
 What to focus on?
@@ -40,10 +40,10 @@ http://chimera.labs.oreilly.com/books/1230000000545/
 
 Ilya Grigorik is a badass. He is basically the [human manifestation of high-performance](http://lh6.ggpht.com/f_0W8h__3G99CWTjnMjD8BUKm7yp2-wJyApLtTwFoFtlal2ULf_JgHIsOQq2NiYfKOdMlXlMHDKNo5XVZLs=s0).
 
-## Back-end advice
+### Back-end advice
 It's hard to interview for back-end positions for new hires. The best predictor of back-end competency is having worked on a high-quality team building a distributed system. Obviously new hires won't have experience with this as there's a minimum scale of project size before it's reasonable or useful to apply the sort of tools that a large project needs.
 
-### Interviewing is a game. Both (conventional) employers and applicants know what the metric is. The content of the interviews is in large part arbitrary: it could be a competition of your knowledge of the linguistic properties of Esperanto. Whiteboarding data structures and algorithms is a learnable skill. The point of the competition is to provide a costly signal of how capable you are of acquiring arbitrary technical skills when required to. Many times on the job, you will have to learn some codebase or difficult bit of software arcana that is not terribly interesting to you, but is required to get another task done.
+## Interviewing is a game. Both (conventional) employers and applicants know what the metric is. The content of the interviews is in large part arbitrary: it could be a competition of your knowledge of the linguistic properties of Esperanto. Whiteboarding data structures and algorithms is a learnable skill. The point of the competition is to provide a costly signal of how capable you are of acquiring arbitrary technical skills when required to. Many times on the job, you will have to learn some codebase or difficult bit of software arcana that is not terribly interesting to you, but is required to get another task done.
 
 You can learn to do well at the interview game. If you want to target a medium-to-large company (and especially for the top tech companies), you have to put in the time. If [Google rejected the creator of Homebrew for not being able to reverse a binary tree](https://twitter.com/mxcl/status/608682016205344768?lang=en), they will happily reject a bootcamp grad for the same.
 
@@ -60,13 +60,13 @@ Which to focus on?
 
   + Graphs. Situational. Learn a simple representation in your language of choice, then BFS, DFS, and least-cost path and call it a day.
 
-## Resources
+### Resources
 
-##### Persistence
+## Persistence
 Understand the difference between relational databases and some of the more popular non-relational dbs. There are many, many no-sql db options. I'd recommend just focusing on a key-value store as they tend to have an excellent fit for situations in which relational dbs don't work well. There are many KV stores. I'd recommend looking at CouchDB. Extremely simple to get set-up, and an incredible interface. You communicate with a CouchDB instance purely by sending HTTP requests, so by default it abstracts away where the location of where the db lives: it could be on localhost, it could be on a cluster - it doesn't matter.
 NoSql distilled by Martin Fowler is a really good primer on some of the different dbs. I haven't watched this talk by him, but probably legit stuff: http://www.youtube.com/watch?v=ASiU89Gl0F0
 
-#### Distributed systems
+## Distributed systems
 Related to above.
 
 The problem in brief: your single relational database can't scala, so you move to a distributed KV store with nodes A, B, and C. A client makes an update to some key-value pair in A. Milliseconds afterwards, another client makes reads the same key-value pair from B. Given that the write was made at another node, how does A update B and C as to the change of state? What version of the pair will the client read from B? What are some of the tradeoffs we face, and what are some use-cases in which we'd make different decisions? (this is what the CAP theorem deals with: "Consistency, Availability, Partition-tolerance: pick two")
@@ -76,7 +76,7 @@ http://www.youtube.com/watch?v=QdkS6ZjeR7Q
 
 I'll poll my team for some more resources here.
 
-# Fancy algorithms (aka dynamic programming)
+## Fancy algorithms (aka dynamic programming)
 To recap above, for many algorithm problems the order of hierarchy of "sophisticatd" or performant solutions is loosely:
   + Naive: brute force
   + Pretty good: use hashmaps
