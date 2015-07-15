@@ -77,7 +77,7 @@ http://www.youtube.com/watch?v=QdkS6ZjeR7Q
 I'll poll my team for some more resources here.
 
 ### Fancy algorithms (aka dynamic programming)
-To recap above, for many algorithm problems the order of hierarchy of "sophisticatd" or performant solutions is loosely:
+To recap above, for many algorithm problems the order of hierarchy of "sophisticated" or performant solutions is loosely:
   + Naive: brute force
   + Pretty good: use hashmaps
   + Fancy, best possible performance: dynamic programming
