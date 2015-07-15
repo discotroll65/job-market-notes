@@ -2,7 +2,7 @@
 
 These are pretty rough. I'll continue to update this. Probably going to split this up into separate more focused parts.
 
-Busy week for me. I can probably come by a/A again next Mon or Tuesto to talk shop again if it'll be helpful.
+Busy week for me. I can probably come by a/A again next Mon or Tues to to talk shop again if it'll be helpful.
 
 ## General advice:
 
@@ -122,6 +122,7 @@ def maxLoot(houses: Neighborhood): Int = {
 
 // with some type signatures of TBD methods:
 def noAdjacentHouses(houses: Neighborhood): Boolean = {...}
+
 def totalLoot(houses: Neighborhood): Int = {...}
 ```
 Types are the best.
