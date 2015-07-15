@@ -69,7 +69,7 @@ NoSql distilled by Martin Fowler is a really good primer on some of the differen
 ### Distributed systems
 Related to above.
 
-The problem in brief: your single relational database can't scala, so you move to a distributed KV store with nodes A, B, and C. A client makes an update to some key-value pair in A. Milliseconds afterwards, another client makes reads the same key-value pair from B. Given that the write was made at another node, how does A update B and C as to the change of state? What version of the pair will the client read from B? What are some of the tradeoffs we face, and what are some use-cases in which we'd make different decisions? (this is what the CAP theorem deals with: "Consistency, Availability, Partition-tolerance: pick two")
+The problem in brief: your single relational database can't scale, so you move to a distributed KV store with nodes A, B, and C. A client makes an update to some key-value pair in A. Milliseconds afterwards, another client makes reads the same key-value pair from B. Given that the write was made at another node, how does A update B and C as to the change of state? What version of the pair will the client read from B? What are some of the tradeoffs we face, and what are some use-cases in which we'd make different decisions? (this is what the CAP theorem deals with: "Consistency, Availability, Partition-tolerance: pick two")
 
 To get started, the Jepsen series of talks by Aphyr stress-testing various databases are excellent:
 http://www.youtube.com/watch?v=QdkS6ZjeR7Q
