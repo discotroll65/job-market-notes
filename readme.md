@@ -52,7 +52,7 @@ The upside is that not all of the preparation is a sunk cost. Data structures ar
 Usefulness of different concepts in algorithms and data structures follows a power law: 20% of the concepts account for 80% of the value. It's probably even more skewed than that: data structures tend to be much more useful than algorithms (much of the transition from novice to intermediate programmer consists of learning the myriad ways in which hashmaps can make your life much easier)
 
 Which to focus on?
-  + Arrays you should already get. There really isn't too much to know here. It's a useful exercise to figure out how dynamically resizing arrays are implemented, and why insertion into a dynamic array is still ammortized O(1) even though you have to do a costly O(n) operation from time to time (also useful to understand what ammortized runtime is)
+  + Arrays you should already get. There really isn't too much to know here. It's a useful exercise to figure out how dynamically resizing arrays are implemented, and why pushing (or unshifting, assuming a ring buffer) into a dynamic array is still ammortized O(1) even though you have to do a costly O(n) operation from time to time (also useful to understand what ammortized runtime is)
 
   + Hashmaps. Extremely important. Know both the hash-table (array) implementation and the treemap (I prefer treemap, but ymmv). Order of efficiency in many algorithms typically goes: brute force > simple solution using hashmaps > sophisticated solution using dynamic programming. Much of the time a hashmap solution is enough to make the interviwer happy. I haven't had to explicitly use dynamic programming once in my 8 months on a fairly technical back-end heavy project.  
 
